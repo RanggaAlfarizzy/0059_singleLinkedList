@@ -17,7 +17,7 @@ public:
     {
         START = NULL;
     }
-};
+
 
 void addNode()
     {
@@ -90,6 +90,24 @@ void addNode()
 
         delete current;
         return true;
-    };
+    }
+    
+
+        void traverse()
+        {
+            if (listEmpty())
+                cout << "\nData di dalam list adalah:\n";
+            else
+            {
+                cout << "\nData di dalam list adalah:\n";
+                Node *currentNode = START;
+                while (currentNode != NULL)
+                {
+                    cout << currentNode->noMhs << endl;
+                    currentNode = currentNode->next;
+                }
+            }
+        }
+};
 
 
